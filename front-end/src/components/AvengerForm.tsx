@@ -54,7 +54,6 @@ const AvengerForm: React.FC<AvengerFormProps> = ({ onAvengerAdded }) => {
     setFormStatus('idle');
 
     try {
-      // No procesamos habilidades acá: ya lo hace el avengerService
       const createdAvenger = await createAvenger(formData);
       onAvengerAdded(createdAvenger);
 
