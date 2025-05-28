@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Avenger {
+  id          Int         @id @default(autoincrement())
+  nombre      String
+  alias       String
+  actor       String
+  descripcion String
+  habilidades Habilidad[]
+}
+
+model Habilidad {
+  id        Int      @id @default(autoincrement())
+  habilidad String
+  avengerId Int
+  avenger   Avenger  @relation(fields: [avengerId], references: [id], onDelete: Cascade)
+}
