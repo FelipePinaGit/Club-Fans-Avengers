@@ -1,3 +1,11 @@
+Integrantes:
+
+Felipe Piña:
+        Backend
+
+Marcelo Comisso:
+        Frontend
+
 Avengers API & Frontend
 API y frontend en React para gestionar un club de fans de los Avengers. Permite agregar nuevos Avengers con sus datos y habilidades, validar formularios, y mostrar la lista.
 ## Vista previa
@@ -5,7 +13,12 @@ API y frontend en React para gestionar un club de fans de los Avengers. Permite 
 
 ### 📃 Lista de Avengers
 
-![Lista](./frontend/public/avenger-lista.jpg)
+![Lista1](./frontend/public/Avengers-list%201.jpg)
+
+![Lista2](./frontend/public/Avengers-list%202.jpg)
+
+![Formulario](./frontend/public/Avengers-form.jpg)
+
 
 Tecnologías
 Backend: Node.js + Prisma + MySQL (o base de datos relacional)
@@ -31,7 +44,7 @@ Levantar el servidor:
 
 
 npm run dev
-El backend estará corriendo por defecto en http://localhost:4000.
+El backend estará corriendo por defecto en http://localhost:3000.
 
 Frontend
 Entrar en la carpeta frontend.
@@ -44,7 +57,7 @@ Levantar la app React:
 
 
 npm start
-La app abrirá en http://localhost:3000.
+La app abrirá en http://localhost:5173/.
 
 Funcionalidades actuales
 Formulario para crear un nuevo Avenger con:
